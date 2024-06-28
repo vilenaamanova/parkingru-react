@@ -1,0 +1,31 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import styles  from './HelloPage.module.css'
+import Bg from '/src/assets/Group 92.svg'
+const HelloPage = () => {
+    return (
+        <>
+            <div className={styles.container}>
+                <img className={styles.image} src={Bg}/>
+                <div className={styles.form}>
+
+                    <div className={styles.card}>
+                        <h3 className={styles.card__title}>
+                            Добро пожаловать в
+                            Parking.ru
+                        </h3>
+                        <p className={styles.card__info}>
+                            Мы собрали для Вас все парковки России в одном мини-приложении
+                        </p>
+                        <div className={styles.card__button}>
+                            <p className={styles.button__text}>Get Started</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </>
+    );
+};
+
+export default HelloPage;
