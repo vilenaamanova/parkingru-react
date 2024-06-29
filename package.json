@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@2gis/mapgl": "^1.48.0",
+    "@pbe/react-yandex-maps": "^1.2.5",
+    "date-fns": "^3.6.0",
     "hamburger-react": "^2.5.1",
     "normalize.css": "^8.0.1",
     "react": "^18.3.1",
+    "react-datepicker": "^7.2.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.0",
     "react-swipeable": "^7.0.1",

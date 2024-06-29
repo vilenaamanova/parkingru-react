@@ -43,9 +43,10 @@
 }
 .image{
     position: absolute;
-    left: 380px;
     width: 550px;
     height: 350px;
+    left: 770px;
+
 }
 .card__info{
     font-family: 'Saira', serif;

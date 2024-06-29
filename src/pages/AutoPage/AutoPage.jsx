@@ -15,7 +15,7 @@ const AutoPage = () => {
                 <a className={styles.cup__link}>+ Добавить авто</a>
             </div>
             <AutoCard car='Mercedes G 63'  number='A 888 AA 777'/>
-            <AutoCard car='Mercedes G 62'  number='A 888 AA 777'/>
+            <AutoCard car='Mercedes G 63'  number='O 888 BB 777'/>
             <AutoCard car='Mercedes G 63'  number='A 888 AA 777'/>
             <AutoCard car='Mercedes G 63'  number='A 888 AA 777'/>
             <AutoCard car='Mercedes G 63'  number='A 888 AA 777'/>

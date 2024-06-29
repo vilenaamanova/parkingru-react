@@ -25,9 +25,9 @@ const Footer = () =>{
                 {/*<CSSTransition in={show} timeout={300}  classNames={styles.my__node}>*/}
 
                 {/*</CSSTransition>*/}
-                <li className={styles.list__item}>
+                <Link to='/auto' className={styles.list__item}>
                     <img src={time} alt="Person"/>
-                </li>
+                </Link>
             </ul>
         </div>
     )

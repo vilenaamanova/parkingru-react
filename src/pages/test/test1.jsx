@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const YandexMap = () => {
     const mapRef = useRef(null);
-    const mapInstanceRef = useRef(null);
     const [points, setPoints] = useState([]);
 
     useEffect(() => {
@@ -19,51 +18,56 @@ const YandexMap = () => {
         const initMap = () => {
             if (!mapRef.current) return;
 
-            mapInstanceRef.current = new window.ymaps.Map(mapRef.current, {
+            const mapInstance = new window.ymaps.Map(mapRef.current, {
                 center: [55.751244, 37.618423],
                 zoom: 10,
             });
 
-            mapInstanceRef.current.events.add('click', (e) => {
+            // Сохранение экземпляра карты в ref для дальнейшего использования
+            mapRef.current.mapInstance = mapInstance;
+
+            mapInstance.events.add('click', (e) => {
                 const coords = e.get('coords');
                 const placemark = new window.ymaps.Placemark(coords, {
                     balloonContent: 'Новая точка',
                 });
-                mapInstanceRef.current.geoObjects.add(placemark);
+                mapInstance.geoObjects.add(placemark);
 
                 setPoints((prevPoints) => {
                     const newPoints = [...prevPoints, coords];
-                    updateRoute(newPoints);
+                    updateRoute(mapInstance, newPoints);
                     return newPoints;
                 });
             });
         };
 
-        const updateRoute = (newPoints) => {
-            if (mapInstanceRef.current) {
-                // Очищаем только маршруты, оставляя метки
-                mapInstanceRef.current.geoObjects.each((geoObject) => {
-                    if (geoObject.geometry.getType() === 'LineString') {
-                        mapInstanceRef.current.geoObjects.remove(geoObject);
+        const updateRoute = (mapInstance, newPoints) => {
+            mapInstance.geoObjects.removeAll();
+
+            // Добавляем метки для всех точек
+            newPoints.forEach((point) => {
+                const placemark = new window.ymaps.Placemark(point, {
+                    balloonContent: 'Точка маршрута',
+                });
+                mapInstance.geoObjects.add(placemark);
+            });
+
+            if (newPoints.length > 1) {
+                // Добавляем маршрут между точками
+                const multiRoute = new window.ymaps.multiRouter.MultiRoute({
+                    referencePoints: newPoints,
+                    params: {
+                        results: 1
                     }
+                }, {
+                    boundsAutoApply: true
                 });
 
-                if (newPoints.length > 1) {
-                    // Добавляем маршрут между точками
-                    const multiRoute = new window.ymaps.multiRouter.MultiRoute({
-                        referencePoints: newPoints,
-                        params: {
-                            results: 1,
-                        },
-                    }, {
-                        boundsAutoApply: true,
-                    });
-
-                    mapInstanceRef.current.geoObjects.add(multiRoute);
-                }
+                mapInstance.geoObjects.add(multiRoute);
             }
         };
 
+        // Проверка на уже загруженный скрипт
         if (!window.ymaps) {
             loadYandexMaps();
         } else {
@@ -71,9 +75,9 @@ const YandexMap = () => {
         }
 
         return () => {
-            if (mapInstanceRef.current) {
-                mapInstanceRef.current.destroy();
-                mapInstanceRef.current = null;
+            if (mapRef.current && mapRef.current.mapInstance) {
+                mapRef.current.mapInstance.destroy();
+                mapRef.current.mapInstance = null;
             }
         };
     }, []);

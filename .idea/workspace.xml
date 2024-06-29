@@ -5,7 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abdcd63a-a909-424b-8940-46ba855a3901" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/cars.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/distance.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modal/Modal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modal/modal.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/yandexMap/YandexMap.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/yandexMap/YandexMap.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/HistoryPage/HistoryPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/HistoryPage/HistoryPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/test/test1.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-I4MZPW7S.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-I4MZPW7S.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-M324AGAM.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-M324AGAM.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/hamburger-react.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/hamburger-react.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-router-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-router-dom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-swipeable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-swipeable.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-transition-group.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-transition-group.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AddBalancePage/AddBalance.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AddBalancePage/AddBalance.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AddBalancePage/AddBalancePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AddBalancePage/AddBalancePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AutoPage/AutoPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AutoPage/AutoPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HelloPage/HelloPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HelloPage/HelloPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HelloPage/HelloPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HelloPage/HelloPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MAP/MapPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MAP/MapPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/MainPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +64,16 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2iTxXnEESSTkXyynNrme19bWXVJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Node.js.App.jsx.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -88,11 +130,15 @@
       <workItem from="1719528410190" duration="12000" />
       <workItem from="1719528447886" duration="31552000" />
       <workItem from="1719617175446" duration="15000" />
-      <workItem from="1719618270643" duration="1350000" />
+      <workItem from="1719618270643" duration="12011000" />
+      <workItem from="1719656712489" duration="6955000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

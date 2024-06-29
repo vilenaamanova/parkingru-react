@@ -2,11 +2,15 @@
 import React from 'react';
 import styles  from './HelloPage.module.css'
 import Bg from '/src/assets/Group 92.svg'
+import {Link} from "react-router-dom";
 const HelloPage = () => {
     return (
         <>
             <div className={styles.container}>
-                <img className={styles.image} src={Bg}/>
+                <div className={styles.image}>
+                    <img src={Bg}/>
+                </div>
+
                 <div className={styles.form}>
 
                     <div className={styles.card}>
@@ -17,9 +21,9 @@ const HelloPage = () => {
                         <p className={styles.card__info}>
                             Мы собрали для Вас все парковки России в одном мини-приложении
                         </p>
-                        <div className={styles.card__button}>
+                        <Link to='/mainpage' className={styles.card__button}>
                             <p className={styles.button__text}>Get Started</p>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 

@@ -9,6 +9,7 @@ import MapPage from "./pages/MAP/MapPage.jsx";
 import PaymentPage from "./pages/Payment/PaymentPage.jsx";
 import WalletPage from "./pages/WalletPage/WalletPage.jsx";
 import AddBalancePage from "./pages/AddBalancePage/AddBalancePage.jsx";
+import HistoryPage from "./pages/HistoryPage/HistoryPage.jsx";
 
 
 
@@ -26,8 +27,9 @@ function App() {
             <Route path='/auto' element={<AutoPage/>}/>
             <Route path='/map' element={<MapPage/>}/>
             <Route path='/payment' element={<PaymentPage/>}/>
-            <Route path="wallet" element={<WalletPage/>}/>
+            <Route path="/wallet" element={<WalletPage/>}/>
             <Route path='/addbalance' element={<AddBalancePage/>}/>
+            <Route path='/history' element={<HistoryPage/>}/>
         </Routes>
 
 
